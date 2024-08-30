@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      padding: 0;
+      margin: 0;
+      height: 100vh; /* Ensure body takes full screen height */
+    }
+    .container {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      height: 600px;
+      background-color: #ffffff;
+      box-sizing: border-box;
+    }
+    .header img {
+      width: 100%;
+      height: auto;
+    }
+    h2 {
+      color: #333;
+      font-size: 14px;
+    }
+    p {
+      color: #2d2d2d;
+      font-size: 16px;
+    }
+    .bold {
+      font-weight: bold;
+      color: #000000;
+    }
+    .footer {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #6c757d;
+      color: #ecf0f1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer span {
+      font-size: 10px;
+      line-height: 1.4;
+      flex: 1; /* Allow span to take available space */
+      text-align: left; /* Align text to the left */
+    }
+    .footer img {
+      width: 160px;
+      height: auto;
+    }
+    @media only screen and (max-width: 768px) {
+      .container {
+        height: 100vh; /* Adjust height to full screen on medium screens */
+        margin: 0; /* Remove margin for full screen height */
+        max-width: 100%; /* Allow container to take full width */
+      }
+      .footer img {
+        width: 120px;
+      }
+      .footer span {
+        font-size: 9px;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .container {
+        height: 100vh; /* Adjust height to full screen on small screens */
+        margin: 0; /* Remove margin for full screen height */
+        max-width: 100%; /* Allow container to take full width */
+      }
+      .footer img {
+        width: 100px;
+      }
+      .footer span {
+        font-size: 9px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="johnson&Jlogo.png" alt="Johnson & Johnson">
+    </div>
+    <h2>Hello {{firstName}},</h2>
+    <p>&nbsp;</p>
+    <p>We appreciate your prompt submission of your Interview Assessment Answers for the position of {{position}}. However, if you haven't had a chance to provide your Educational Documents, we kindly request that you reply to this email by attaching the necessary documents. Doing so will help us expedite the assessment of your application and ensure we have all the required information for the evaluation process. Your cooperation in this matter is greatly appreciated.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p><span class="bold">Johnson & Johnson USA.</span></p>
+
+    <div class="footer">
+      <span>
+        The contents of this email and any attachments are confidential. They are intended for the named recipient(s) only. If you have received this email by mistake, please notify the sender immediately and do not disclose the contents to anyone or make copies thereof.
+      </span>
+      <div>
+        <img src="Johnson.png" alt="J&J" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
